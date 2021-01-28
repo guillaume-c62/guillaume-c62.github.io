@@ -1,4 +1,11 @@
+body{
+    background-color: black;
+}
+
 h1{
-    color: red;
+    color: white;
+    text-transform: uppercase;
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
 }
