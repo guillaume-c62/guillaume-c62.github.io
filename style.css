@@ -3,20 +3,19 @@
  padding: 0;
  box-sizing: border-box;   
 }
-
-body
-{
-    background-color: black;
+body{
+    background-color: transparent;
     overflow: hidden;
 }
 
 h1
 {
-    color: white;
+    color: black;
     text-transform: uppercase;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
+    z-index: 4;
 }
 section
 {
