@@ -10,12 +10,37 @@ body{
 
 h1
 {
-    color: black;
+    position: absolute;
+    top: 20px;
+    padding: 10px;
+    color: #dff1ff;
     text-transform: uppercase;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    z-index: 4;
+    font-family: 'Poiret One', cursive;
+    letter-spacing: 7px;
+    font-size: 30px;
+    /* z-index: 4; */
+}
+h2
+{
+    font-family: 'Poiret One', cursive;
+    z-index: 1;
+    color: white;
+    position: absolute;
+    top: 65%;
+    left: 45%;
+}
+p{
+    text-align: center;
+    position: absolute;
+    top: 130px;
+    width: 50%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
 }
 section
 {
@@ -25,7 +50,7 @@ section
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom, #ff4f8b, #dff1ff);
+    background: linear-gradient(to bottom, #305cb9, #dff1ff);
 }
 section::before
 {
@@ -98,6 +123,7 @@ ul li a
    backdrop-filter: blur(2px);
    transition: 0.5s;
    overflow: hidden;
+   font-family: roboto;
 }
 ul li a:hover
 {
@@ -118,4 +144,59 @@ ul li a::before
 ul li a:hover::before
 {
 transform: skewX(45deg) translateX(-150px);
+}
+img
+{
+    background-image: url(./img/me-mini.jpg);
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    background-size: contain;
+    border: 1px solid black;
+}
+
+div
+{
+    z-index: 2;
+    position:absolute;
+    width: 100%;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* background: linear-gradient(to bottom, #ff4f8b, #dff1ff); */
+    border-top: 1px solid rgba(255,255,255,0.5);
+    bottom: 20%;
+}
+div::before
+{
+    /* content: ''; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* height: 0%; */
+    z-index: 1;
+    backdrop-filter: blur(5px);
+    border-top: 1px solid rgba(255,255,255,0.5);
+}
+div .color
+{
+    position: absolute;
+    filter: blur(150px);
+}
+div ul li a {
+    position: relative;
+    top: -55px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: roboto;
+   width: 90px;
+   height: 90px;
+   padding: 30px;
+   font-size: 20px;
+   color:  #305cb9;
 }
